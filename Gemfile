@@ -41,7 +41,7 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  #gem 'sqlite3' 
+  # gem 'sqlite3'
 
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -60,15 +60,15 @@ end
 
 # make sure the following gems are in your production group:
 group :production do
-  gem 'pg'              # use PostgreSQL in production (Heroku)
+  gem "pg"              # use PostgreSQL in production (Heroku)
 end
 
 # setup Cucumber, RSpec, Guard support
 group :test do
-  gem 'rspec-rails'
-  gem 'guard-rspec'
-  gem 'simplecov', :require => false
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels' # basic imperative step defs like "Then I should see..."
-  gem 'database_cleaner' # required by Cucumber
+  gem "rspec-rails"
+  gem "guard-rspec"
+  gem "simplecov", require: :false
+  gem "cucumber-rails", require: :false
+  gem "cucumber-rails-training-wheels" # basic imperative step defs like "Then I should see..."
+  gem "database_cleaner" # required by Cucumber
 end
